@@ -1,0 +1,14 @@
+Delete account
+● Apply for deletion/invalidation of all unnecessary account promptly.
+● Delete the account information held on the personal laptop/terminal server.
+● In regard to the above two points, obtain completion confirmation from the
+responsible person of the affiliated organization or FR person in the affiliated
+project.
+Notices
+● When leakage of account information is discovered, it should report promptly in
+the order of (1) FR personnel (2) superior manager of FR personnel (3)
+information security office/FRIT Infrastructure team.
+● For details on how to create / delete an account, please see below.
+https://frit.rickcloud.jp/wiki/pages/viewpage.action?pageId=152836749
+Contact List : Information security office (information.security@fastretailing.com)
+FRIT Infrastructure team (fr-sre-internal@mail.fastretailing.com)
