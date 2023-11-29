@@ -4,11 +4,12 @@ import "fmt"
 
 func main() {
 	fmt.Println("welcome to pointers")
-	//tryDiffThings()
-	a := 4
-	fmt.Println("address of a: ", &a)
-	square(a)
-	squareAdd(&a)
+	tryDiffThings()
+	// a := 4
+	// fmt.Println("address of a: ", &a)
+	//square(a)
+	//squareAdd(&a)
+	// testF()
 }
 
 func tryDiffThings() {
@@ -16,7 +17,7 @@ func tryDiffThings() {
 	fmt.Printf("x,y is %v,%v\n", x, y) // x is 1 , y is 2
 	fmt.Printf("%T,%T\n", &x, &y)      // *int,*int
 	pntr := &x                         // var pntr *int = &x
-	fmt.Printf("%T\n", pntr)           // *int
+	fmt.Printf("%T\n", pntr)           // Type of pntr is *int
 	fmt.Println("pntr Add:", &pntr)    // address where pntr is stored
 	fmt.Println(&x, ",", &y)           //address where the x var,y var is stored
 	fmt.Println(*pntr)                 //dereferncing oprator * Take the pointer and figure out the value of this.
@@ -41,4 +42,21 @@ func squareAdd(num *int) {
 	fmt.Printf("%v, %v\n", num, *num)
 	*num *= *num
 	fmt.Printf("%v, %v\n", num, *num)
+}
+
+type testS struct {
+	Name string
+	Age  int
+}
+
+func testF() {
+	opt1 := testS{
+		Name: "Reshil",
+	}
+
+	opt2 := opt1
+
+	opt2.Age = 35
+	fmt.Printf("opt1: %#v\n", &opt1)
+	fmt.Printf("opt2: %#v\n", &opt2)
 }
